@@ -84,7 +84,6 @@ void mas3(int A[N][M], int x)
 				
 			}
 
-
 		}
 	}
 }
