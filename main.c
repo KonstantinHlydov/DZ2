@@ -12,7 +12,7 @@ void mas1(int A[N][M])
 			else if (i % (N - 1) == 0 || j % (M - 1) == 0)
 				A[i][j] = 1;
 			else
-				A[i][j] = rand() % 2;
+				A[i][j] = rand() % 2 ? rand() % 2 : 0;
 }
 
 void mas2(int A[N][M])
@@ -65,16 +65,15 @@ int main()
 	int x;
 	int i;
 	int j;
-    printf("Vvedite chislo zalivki:");
+	printf("Sozdal massiv:\n");
+	mas1(A);
+	mas2(A);
+	printf("Vvedite chislo zalivki:");
 	scanf("%d", &x);
 	printf("Vvedite pervyu koordinaty dlya massiva:");
 	scanf("%d", &i);
 	printf("Vvedite vtoryu koordinaty dlya massiva:");
 	scanf("%d", &j);
-
-	printf("Sozdal massiv:\n");
-	mas1(A);
-	mas2(A);
 	printf("Massiv:\n");
 	mas3(A, x, i, j);
 	mas2(A);
