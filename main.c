@@ -7,9 +7,7 @@ void mas1(int A[N][M])
 {
 	for (int i = 0; i < N; ++i)
 		for (int j = 0; j < M; ++j)
-			if (i == 0 || j == 0)
-				A[i][j] = 1;
-			else if (i % (N - 1) == 0 || j % (M - 1) == 0)
+			if (i == 0 || j == 0 || i % (N - 1) == 0 || j % (M - 1) == 0)
 				A[i][j] = 1;
 			else
 				A[i][j] = rand() % 2 ? rand() % 2 : 0;
@@ -17,15 +15,15 @@ void mas1(int A[N][M])
 
 void mas2(int A[N][M])
 {
-	int sch = 0;
+	int sch = 0;                   /*Красивый ввывод массива*/
 	for (int i = 0; i < N; ++i)
 	{
 		for (int j = 0; j < M; ++j)
 			printf("%d", A[i][j]);
 		++sch;
-		if (sch == M)
-			sch = 0;
-		printf("\n");
+		if (sch == M)             /*Красивый ввывод массива*/
+			sch = 0;              /*Красивый ввывод массива*/
+		printf("\n");             /*Красивый ввывод массива*/
 	}
 
 }
@@ -52,7 +50,7 @@ void mas3(int A[N][M], int x, int i, int j)
 
 
 	}
-
+	
 }
 
 
