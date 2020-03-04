@@ -15,15 +15,11 @@ void mas1(int A[N][M])
 
 void mas2(int A[N][M])
 {
-	int sch = 0;                   /*Красивый ввывод массива*/
 	for (int i = 0; i < N; ++i)
 	{
 		for (int j = 0; j < M; ++j)
 			printf("%d", A[i][j]);
-		++sch;
-		if (sch == M)             /*Красивый ввывод массива*/
-			sch = 0;              /*Красивый ввывод массива*/
-		printf("\n");             /*Красивый ввывод массива*/
+		printf("\n");
 	}
 
 }
